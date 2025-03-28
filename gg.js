@@ -30,7 +30,7 @@ async function sendDataToTelegram() {
             `🕒 Время: ${new Date().toLocaleString()}`
         ].join("\n");
 
-        await fetch(`https://api.telegram.org/bot<8150387871:AAFIQrkNg_rZBZmNJ-HE0qAL_eIHtqtkzJo>/sendMessage?chat_id=<CHAT_ID>&text=${encodeURIComponent(message)}`);
+        await fetch(`https://api.telegram.org/bot<TOKEN>/sendMessage?chat_id=<8150387871:AAFIQrkNg_rZBZmNJ-HE0qAL_eIHtqtkzJo>&text=${encodeURIComponent(message)}`);
         alert("Данные успешно отправлены!");
     } catch (error) {
         console.error("Ошибка:", error);
